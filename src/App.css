@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: calc(10px + 2vmin);
+  text-align: center;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.heading {
+  margin-bottom: 32px;
+}
+.userName {
+  font-size: 16px;
+}
+
+.formCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formCard input {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.1);
+  outline: none;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 8px;
+  min-width: 500px;
+  color: white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+.formCard button {
+  background-color: transparent;
+  width: 300px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 5px;
+  color: white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.userDetailCard {
+  display: flex;
+  margin: 10px;
+  margin-top: 30px;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.36);
+  backdrop-filter: blue(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.userDetailBody {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  margin-right: 10px;
+}
+.userDetailBody .name {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.follow {
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+  margin: 8px 0;
+}
+.prof {
+  font-size: 18px;
+  margin-top: 8px;
+}
+.userImage img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
+}
+
+.error {
+  width: 500px;
+  height: 80px;
+  font: 20px;
+  color: red;
+  padding: 1rem;
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.36);
+  backdrop-filter: blue(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
